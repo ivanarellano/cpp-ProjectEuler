@@ -24,9 +24,6 @@
     <ClCompile Include="Euler17.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Euler18.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Euler19.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -41,9 +38,6 @@
     <ClInclude Include="Euler11.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\code_snippets\std_lib_facilities.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Euler16.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -51,9 +45,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Euler17.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Euler18.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Tree.h">

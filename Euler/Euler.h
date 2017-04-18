@@ -1,15 +1,24 @@
 #pragma once
 
-#include <chrono>
-
 #include "Euler11.h"
 #include "Euler16.h"
 #include "Euler17.h"
 #include "Euler19.h"
 #include "Euler20.h"
-#include "../../code_snippets/std_lib_facilities.h"
+
+#include <iostream>
+#include <chrono>
 
 typedef int Solution();
+
+inline void keep_window_open()
+{
+	std::cin.clear();
+	std::cout << "Please enter a character to exit\n";
+	char ch;
+	std::cin >> ch;
+	return;
+}
 
 int euler11() {
 	Euler11 euler11;
@@ -37,15 +46,15 @@ int euler20() {
 }
 
 void printSolutionDelta(Solution solution) {
-	chrono::steady_clock::time_point begin = chrono::steady_clock::now();
+	std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
 
 	int output = solution();
 
-	chrono::steady_clock::time_point end = chrono::steady_clock::now();
+	std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
 
-	cout << "Solution: " << output
-		<< endl
+	std::cout << "Solution: " << output
+		<< std::endl
 		<< "Time difference in ms = "
-		<< chrono::duration_cast<chrono::milliseconds>(end - begin).count()
-		<< endl;
+		<< std::chrono::duration_cast<std::chrono::milliseconds>(end - begin).count()
+		<< std::endl;
 }

@@ -24,7 +24,7 @@ int Euler11::get_triangle_number(int n)
 }
 
 
-std::vector<int> Euler11::get_factors(int n)
+std::vector<int> Euler11::get_factors(int n) const
 {
 	std::vector<int> list;
 	if (n > 0) {
@@ -40,7 +40,7 @@ std::vector<int> Euler11::get_factors(int n)
 	return list;
 }
 
-int Euler11::get_factors_size(int n)
+int Euler11::get_factors_size(int n) const
 {
 	int factors = 0;
 	int sqrt_n = sqrt(n);

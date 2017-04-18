@@ -31,9 +31,9 @@ public:
 	int get_solution();
 private:
 	const int DIVISORS_GOAL = 500;
-	std::vector<int> get_factors(int n);
-	int get_factors_size(int n);
+	std::vector<int> get_factors(int n) const;
+	int get_factors_size(int n) const;
 	int get_triangle_number(int n);
-	const bool is_answer(int n) { return n < DIVISORS_GOAL; }
+	bool is_answer(int n) const { return n < DIVISORS_GOAL; }
 };
 

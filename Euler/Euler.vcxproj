@@ -150,17 +150,14 @@
     <ClCompile Include="Euler11.cpp" />
     <ClCompile Include="Euler16.cpp" />
     <ClCompile Include="Euler17.cpp" />
-    <ClCompile Include="Euler18.cpp" />
     <ClCompile Include="Euler19.cpp" />
     <ClCompile Include="Euler20.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\code_snippets\std_lib_facilities.h" />
     <ClInclude Include="Euler.h" />
     <ClInclude Include="Euler11.h" />
     <ClInclude Include="Euler16.h" />
     <ClInclude Include="Euler17.h" />
-    <ClInclude Include="Euler18.h" />
     <ClInclude Include="Euler19.h" />
     <ClInclude Include="Euler20.h" />
     <ClInclude Include="Tree.h" />

@@ -1,23 +1,4 @@
 #include "Euler19.h"
-#include "../../code_snippets/std_lib_facilities.h"
-
-/*
-Counting Sundays
-Problem 19
-
-You are given the following information, but you may prefer to do some research for yourself.
-
-1 Jan 1900 was a Monday.
-Thirty days has September,
-April, June and November.
-All the rest have thirty-one,
-Saving February alone,
-Which has twenty-eight, rain or shine.
-And on leap years, twenty-nine.
-A leap year occurs on any year evenly divisible by 4, but not on a century unless it is divisible by 400.
-
-How many Sundays fell on the first of the month during the twentieth century (1 Jan 1901 to 31 Dec 2000)?
-*/
 
 int Euler19::getSolution() {
 	Day currentDay = Day::MON;		// Day 0 = 1900 Monday
@@ -30,7 +11,7 @@ int Euler19::getSolution() {
 			Month currentMonth = getMonth(month);
 			int daysInMonth = Euler19::daysInMonth(currentMonth);
 
-			if (Euler19::isLeapYear(year) && currentMonth == Month::FEB) {
+			if (isLeapYear(year) && currentMonth == Month::FEB) {
 				++daysInMonth;
 			}
 			
@@ -41,7 +22,7 @@ int Euler19::getSolution() {
 					++firstSundays;
 				}
 
-				currentDay = Euler19::tomorrow(currentDay);
+				currentDay = tomorrow(currentDay);
 			}
 		}
 	}
@@ -68,7 +49,7 @@ bool Euler19::isLeapYear(int year) {
 }
 
 Month Euler19::getMonth(int month) {
-	if (month < int(Month::JAN) || int(Month::DEC) < month) error("Bad month");
+	if (month < int(Month::JAN) || int(Month::DEC) < month) throw std::runtime_error("Bad month");
 	return Month(month);
 }
 
