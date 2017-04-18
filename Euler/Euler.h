@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <chrono>
+#include "Euler22.hpp"
 
 typedef int Solution();
 
@@ -17,35 +18,46 @@ inline void keep_window_open()
 	std::cout << "Please enter a character to exit\n";
 	char ch;
 	std::cin >> ch;
-	return;
 }
 
-int euler11() {
+int euler11()
+{
 	Euler11 euler11;
 	return euler11.get_solution();
 }
 
-int euler16() {
+int euler16()
+{
 	Euler16 euler16;
 	return euler16.get_solution();
 }
 
-int euler17() {
+int euler17()
+{
 	Euler17 euler17;
 	return euler17.getSolution();
 }
 
-int euler19() {
+int euler19()
+{
 	Euler19 euler19;
 	return euler19.getSolution();
 }
 
-int euler20() {
+int euler20()
+{
 	Euler20 euler20;
 	return euler20.solution();
 }
 
-void printSolutionDelta(Solution solution) {
+int euler22()
+{
+	Euler22 euler22;
+	return euler22.get_total_of_scores();
+}
+
+void printSolutionDelta(Solution solution)
+{
 	std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
 
 	int output = solution();

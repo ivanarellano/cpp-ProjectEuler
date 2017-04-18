@@ -146,6 +146,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Euler22.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Euler11.cpp" />
     <ClCompile Include="Euler16.cpp" />
@@ -160,7 +161,11 @@
     <ClInclude Include="Euler17.h" />
     <ClInclude Include="Euler19.h" />
     <ClInclude Include="Euler20.h" />
+    <ClInclude Include="Euler22.hpp" />
     <ClInclude Include="Tree.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="names.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
