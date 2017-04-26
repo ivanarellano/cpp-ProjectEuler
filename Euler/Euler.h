@@ -9,6 +9,7 @@
 #include <iostream>
 #include <chrono>
 #include "Euler22.hpp"
+#include "Euler23.h"
 
 typedef int Solution();
 
@@ -54,6 +55,12 @@ int euler22()
 {
 	Euler22 euler22;
 	return euler22.get_total_of_scores();
+}
+
+int euler23()
+{
+	Euler23 euler23;
+	return euler23.get_solution();
 }
 
 void printSolutionDelta(Solution solution)

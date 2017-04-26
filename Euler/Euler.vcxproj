@@ -147,6 +147,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Euler22.cpp" />
+    <ClCompile Include="Euler23.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Euler11.cpp" />
     <ClCompile Include="Euler16.cpp" />
@@ -162,6 +163,7 @@
     <ClInclude Include="Euler19.h" />
     <ClInclude Include="Euler20.h" />
     <ClInclude Include="Euler22.hpp" />
+    <ClInclude Include="Euler23.h" />
     <ClInclude Include="Tree.h" />
   </ItemGroup>
   <ItemGroup>

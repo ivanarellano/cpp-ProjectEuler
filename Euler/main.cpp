@@ -1,7 +1,7 @@
 #include "Euler.h"
 
 int main() {
-	printSolutionDelta(euler22);
+	printSolutionDelta(euler23);
 
 	keep_window_open();
 	return 0;

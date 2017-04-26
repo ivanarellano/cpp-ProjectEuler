@@ -36,6 +36,9 @@
     <ClCompile Include="Euler22.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Euler23.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Euler11.h">
@@ -60,6 +63,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Euler22.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Euler23.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
