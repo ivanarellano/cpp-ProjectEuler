@@ -1,9 +1,10 @@
 #include "Euler23.h"
+#include <algorithm>
 
 int Euler23::get_solution()
 {
-	constexpr int smallest_abundant_n { 12 };
-	constexpr int last_non_abundant_n { 28123 };
+	constexpr int smallest_abundant_n {12};
+	constexpr int last_non_abundant_n {28123};
 
 	int running_sum = 0;
 
@@ -15,15 +16,18 @@ int Euler23::get_solution()
 
 	int abundants_sz = m_abundants.size();
 
-	for (int i = 0; i < abundants_sz - 1; ++i) 
+	for (int i = 0; i < abundants_sz - 1; ++i)
 	{
 		for (int j = i; j < abundants_sz; ++j)
-			m_abundants_sums.insert(m_abundants.at(i) + m_abundants.at(j));
+			m_abundants_sums.push_back(m_abundants.at(i) + m_abundants.at(j));
 	}
 
-	for (int i = 1; i < last_non_abundant_n; ++i) 
+	sort(m_abundants_sums.begin(), m_abundants_sums.end());
+	//m_abundants_sums.erase(unique(m_abundants_sums.begin(), m_abundants_sums.end()), m_abundants_sums.end());
+
+	for (int i = 1; i < last_non_abundant_n; ++i)
 	{
-		if (find(m_abundants_sums.begin(), m_abundants_sums.end(), i) == m_abundants_sums.end())
+		if (!binary_search(m_abundants_sums.begin(), m_abundants_sums.end(), i))
 			running_sum += i;
 	}
 
@@ -37,10 +41,10 @@ bool Euler23::is_number_abundant(int number) const
 
 int Euler23::get_sum_of_divisors(int number) const
 {
-	int sum { 0 };
-	int max { number / 2 };
+	int sum {0};
+	int max {number / 2};
 
-	for (int i = 1; i <= max; ++i) 
+	for (int i = 1; i <= max; ++i)
 	{
 		if (number % i == 0)
 			sum += i;

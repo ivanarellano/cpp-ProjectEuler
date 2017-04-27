@@ -1,6 +1,5 @@
 #pragma once
 #include <vector>
-#include <set>
 
 /*
 A perfect number is a number for which the sum of its proper divisors is 
@@ -29,8 +28,7 @@ public:
 private:
 	bool is_number_abundant(int number) const;
 	int get_sum_of_divisors(int number) const;
-	//bool is_not_sum_of_two_abundants(int number) const;
 
 	std::vector<int> m_abundants;
-	std::set<int> m_abundants_sums;
+	std::vector<int> m_abundants_sums;
 };
