@@ -1,5 +1,4 @@
 #include "Euler23.h"
-#include <algorithm>
 
 int Euler23::get_solution()
 {
@@ -14,20 +13,24 @@ int Euler23::get_solution()
 			m_abundants.push_back(i);
 	}
 
-	int abundants_sz = m_abundants.size();
+	m_abundants_sums.assign(last_non_abundant_n, false);
 
-	for (int i = 0; i < abundants_sz - 1; ++i)
+	int abundants_sz = m_abundants.size();
+	for (int i = 0; i < abundants_sz; ++i)
 	{
 		for (int j = i; j < abundants_sz; ++j)
-			m_abundants_sums.push_back(m_abundants.at(i) + m_abundants.at(j));
+		{
+			int sum_of_abundants = m_abundants.at(i) + m_abundants.at(j);
+			if (sum_of_abundants < last_non_abundant_n)
+				m_abundants_sums[sum_of_abundants] = true;
+			else
+				break;
+		}
 	}
-
-	sort(m_abundants_sums.begin(), m_abundants_sums.end());
-	//m_abundants_sums.erase(unique(m_abundants_sums.begin(), m_abundants_sums.end()), m_abundants_sums.end());
 
 	for (int i = 1; i < last_non_abundant_n; ++i)
 	{
-		if (!binary_search(m_abundants_sums.begin(), m_abundants_sums.end(), i))
+		if (!m_abundants_sums[i])
 			running_sum += i;
 	}
 

@@ -30,5 +30,5 @@ private:
 	int get_sum_of_divisors(int number) const;
 
 	std::vector<int> m_abundants;
-	std::vector<int> m_abundants_sums;
+	std::vector<bool> m_abundants_sums;
 };
