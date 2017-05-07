@@ -23,9 +23,6 @@
     <ClInclude Include="include\Euler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\Euler11.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\Euler16.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -38,9 +35,6 @@
     <ClInclude Include="include\Euler20.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\Euler22.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\Euler23.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -50,11 +44,14 @@
     <ClInclude Include="include\Tree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\Euler12.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Euler22.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Euler11.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\Euler16.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -74,6 +71,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Euler12.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Euler24.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

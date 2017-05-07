@@ -1,15 +1,14 @@
 #pragma once
 
-#include "Euler11.h"
+#include "Euler12.h"
 #include "Euler16.h"
 #include "Euler17.h"
 #include "Euler19.h"
 #include "Euler20.h"
-
+#include "Euler22.h"
+#include "Euler23.h"
 #include <iostream>
 #include <chrono>
-#include "Euler22.hpp"
-#include "Euler23.h"
 
 typedef int Solution();
 
@@ -21,9 +20,9 @@ inline void keep_window_open()
 	std::cin >> ch;
 }
 
-int euler11()
+int euler12()
 {
-	Euler11 euler11;
+	Euler12 euler11;
 	return euler11.get_solution();
 }
 
@@ -67,7 +66,7 @@ void printSolutionDelta(Solution solution)
 {
 	std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
 
-	int output = solution();
+	int output { solution() };
 
 	std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
 

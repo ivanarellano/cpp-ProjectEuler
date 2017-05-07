@@ -1,4 +1,5 @@
 #include "Euler19.h"
+#include <stdexcept>
 
 int Euler19::getSolution() {
 	Day currentDay = Day::MON;		// Day 0 = 1900 Monday

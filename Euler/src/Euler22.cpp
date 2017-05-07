@@ -1,4 +1,4 @@
-#include "Euler22.hpp"
+#include "Euler22.h"
 #include <fstream>
 #include <stdexcept>
 #include <algorithm>
@@ -46,7 +46,7 @@ std::vector<std::string> Euler22::parse_names(const std::string& file_name) cons
 	std::ifstream ist(file_name);
 
 	if (!ist)
-		std::runtime_error{"Can't open file."};
+		std::runtime_error { "Can't open file." };
 
 	std::string name;
 

@@ -1,3 +1,7 @@
-﻿$HEADER$#pragma once
+﻿#pragma once
 
-class $CLASS$ {public:$END$};
+class Euler24
+{
+public:
+private:
+};

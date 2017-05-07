@@ -152,24 +152,25 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Euler.h" />
-    <ClInclude Include="include\Euler11.h" />
+    <ClInclude Include="include\Euler12.h" />
     <ClInclude Include="include\Euler16.h" />
     <ClInclude Include="include\Euler17.h" />
     <ClInclude Include="include\Euler19.h" />
     <ClInclude Include="include\Euler20.h" />
-    <ClInclude Include="include\Euler22.hpp" />
+    <ClInclude Include="include\Euler22.h" />
     <ClInclude Include="include\Euler23.h" />
     <ClInclude Include="include\Euler24.h" />
     <ClInclude Include="include\Tree.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Euler11.cpp" />
+    <ClCompile Include="src\Euler12.cpp" />
     <ClCompile Include="src\Euler16.cpp" />
     <ClCompile Include="src\Euler17.cpp" />
     <ClCompile Include="src\Euler19.cpp" />
     <ClCompile Include="src\Euler20.cpp" />
     <ClCompile Include="src\Euler22.cpp" />
     <ClCompile Include="src\Euler23.cpp" />
+    <ClCompile Include="src\Euler24.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

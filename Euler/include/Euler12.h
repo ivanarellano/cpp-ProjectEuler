@@ -25,15 +25,16 @@ What is the value of the first triangle number to have over five hundred divisor
 
 Formula for Triangle Numbers: n(n-1)/2
 */
-class Euler11
+
+class Euler12
 {
 public:
 	int get_solution();
 private:
-	const int DIVISORS_GOAL = 500;
+	const int DIVISORS_GOAL { 500 };
 	std::vector<int> get_factors(int n) const;
+
 	int get_factors_size(int n) const;
 	int get_triangle_number(int n);
 	bool is_answer(int n) const { return n < DIVISORS_GOAL; }
 };
-

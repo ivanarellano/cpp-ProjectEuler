@@ -1,5 +1,4 @@
 #pragma once
-#include <stdexcept>
 
 /*
 Counting Sundays
@@ -19,20 +18,23 @@ A leap year occurs on any year evenly divisible by 4, but not on a century unles
 How many Sundays fell on the first of the month during the twentieth century (1 Jan 1901 to 31 Dec 2000)?
 */
 
-enum class Month {
+enum class Month 
+{
 	JAN, FEB, MAR, APR, MAY, JUNE, JULY, AUG, SEPT, OCT, NOV, DEC
 };
 
-enum class Day {
+enum class Day 
+{
 	SUN, MON, TUES, WED, THURS, FRI, SAT
 };
 
-class Euler19 {
+class Euler19 
+{
 public:
 	int getSolution();
 private:
-	const int END_YEAR = 2000;
-	const int START_YEAR = 1900;
+	const int END_YEAR { 2000 };
+	const int START_YEAR { 1900 };
 
 	int daysInMonth(const Month& month);
 	bool isLeapYear(int year);
