@@ -89,6 +89,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -119,6 +120,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -146,18 +148,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Euler.h" />
-    <ClInclude Include="Euler11.h" />
-    <ClInclude Include="Euler16.h" />
-    <ClInclude Include="Euler17.h" />
-    <ClInclude Include="Euler19.h" />
-    <ClInclude Include="Euler20.h" />
-    <ClInclude Include="Euler22.hpp" />
-    <ClInclude Include="Euler23.h" />
-    <ClInclude Include="Tree.h" />
+    <Text Include="names.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="names.txt" />
+    <ClInclude Include="include\Euler.h" />
+    <ClInclude Include="include\Euler11.h" />
+    <ClInclude Include="include\Euler16.h" />
+    <ClInclude Include="include\Euler17.h" />
+    <ClInclude Include="include\Euler19.h" />
+    <ClInclude Include="include\Euler20.h" />
+    <ClInclude Include="include\Euler22.hpp" />
+    <ClInclude Include="include\Euler23.h" />
+    <ClInclude Include="include\Euler24.h" />
+    <ClInclude Include="include\Tree.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Euler11.cpp" />
+    <ClCompile Include="src\Euler16.cpp" />
+    <ClCompile Include="src\Euler17.cpp" />
+    <ClCompile Include="src\Euler19.cpp" />
+    <ClCompile Include="src\Euler20.cpp" />
+    <ClCompile Include="src\Euler22.cpp" />
+    <ClCompile Include="src\Euler23.cpp" />
+    <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
