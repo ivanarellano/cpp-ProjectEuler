@@ -170,7 +170,6 @@
     <ClCompile Include="src\Euler20.cpp" />
     <ClCompile Include="src\Euler22.cpp" />
     <ClCompile Include="src\Euler23.cpp" />
-    <ClCompile Include="src\Euler24.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

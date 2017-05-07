@@ -7,6 +7,7 @@
 #include "Euler20.h"
 #include "Euler22.h"
 #include "Euler23.h"
+#include "Euler24.h"
 #include <iostream>
 #include <chrono>
 
@@ -60,6 +61,12 @@ int euler23()
 {
 	Euler23 euler23;
 	return euler23.get_solution();
+}
+
+int euler24()
+{
+	Euler24 euler24;
+	return euler24.get_solution();
 }
 
 void printSolutionDelta(Solution solution)
