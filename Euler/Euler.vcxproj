@@ -146,16 +146,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Euler22.cpp" />
-    <ClCompile Include="Euler23.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Euler11.cpp" />
-    <ClCompile Include="Euler16.cpp" />
-    <ClCompile Include="Euler17.cpp" />
-    <ClCompile Include="Euler19.cpp" />
-    <ClCompile Include="Euler20.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="Euler.h" />
     <ClInclude Include="Euler11.h" />
     <ClInclude Include="Euler16.h" />
